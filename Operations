@@ -51,6 +51,22 @@ public class Operation {
         newNode.next=prev.next;
         prev.next=newNode;
     }
+
+    public void insertAtLast(int val){
+        Node newNode= new Node(val);
+        if(head==null)
+        {
+            head=newNode;
+            return;
+        }
+        
+        Node currNode=head;
+        while(currNode.next!=null)
+        {
+            currNode=currNode.next;
+        }
+        currNode.next=newNode;
+        }
     public void printList(Node head)
     {
         if(head==null)
