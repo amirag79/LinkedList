@@ -118,22 +118,15 @@ public class Operation {
 public void search(Node head,int key)
     {
         Node searchNode=head;
-        int flag=0;
         while(searchNode!=null)
         {
             if(searchNode.val==key){
-            flag=1;
+            System.out.println("Element found");
             }
-            
             searchNode=searchNode.next;
-            
-        }
-        if(flag==1)
-    System.out.println("ELement found");
-    else
+            }
     System.out.println("ELement not found");
-        
-        return;
+    return;
     }
 
     void deleteLast()
